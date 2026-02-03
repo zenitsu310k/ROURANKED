@@ -1,0 +1,40 @@
+// Ouvrir / fermer la fenêtre de connexion
+const modal = document.getElementById("loginModal");
+document.getElementById("openLogin").onclick = () => modal.style.display = "block";
+document.querySelector(".close").onclick = () => modal.style.display = "none";
+
+// Boutons
+document.getElementById("ctaButton").onclick = () => {
+  alert("Bienvenue sur NoMercy Secure !");
+};
+
+document.getElementById("downloadBtn").onclick = () => {
+  alert("Téléchargement bientôt disponible.");
+};
+
+// Connexion (exemple simple)
+document.getElementById("loginBtn").onclick = function() {
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  if (user === "admin" && pass === "1234") {
+    document.getElementById("loginMessage").innerText = "Connexion réussie ✅";
+  } else {
+    document.getElementById("loginMessage").innerText = "Identifiants incorrects ❌";
+  }
+};
+
+// Formulaire de contact
+document.getElementById("sendBtn").onclick = function() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+
+  if (name && email && message) {
+    document.getElementById("confirmation").innerText =
+      "Message envoyé, merci " + name + " !";
+  } else {
+    document.getElementById("confirmation").innerText =
+      "Veuillez remplir tous les champs.";
+  }
+};

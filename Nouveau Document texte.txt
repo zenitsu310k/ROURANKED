@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoMercy Secure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="gradient-bg"></div>
+
+<header>
+  <div class="logo">NoMercy</div>
+  <nav>
+    <a href="#features">Fonctionnalités</a>
+    <a href="#download">Télécharger</a>
+    <a href="#contact">Contact</a>
+    <button id="openLogin" class="small-btn">Connexion</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Protection Anti-Cheat Avancée</h1>
+  <p>Sécurisez vos serveurs avec une technologie moderne et fiable.</p>
+  <button id="ctaButton">Commencer</button>
+</section>
+
+<section id="features" class="features">
+  <div class="card">
+    <h3>Détection en temps réel</h3>
+    <p>Analyse comportementale avancée.</p>
+  </div>
+  <div class="card">
+    <h3>Sécurité renforcée</h3>
+    <p>Protection contre injections et exploits.</p>
+  </div>
+  <div class="card">
+    <h3>Mises à jour continues</h3>
+    <p>Système constamment amélioré.</p>
+  </div>
+</section>
+
+<section id="download" class="download">
+  <h2>Télécharger NoMercy</h2>
+  <button id="downloadBtn">Télécharger</button>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <input type="text" id="name" placeholder="Votre nom">
+  <input type="email" id="email" placeholder="Votre email">
+  <textarea id="message" placeholder="Votre message"></textarea>
+  <button id="sendBtn">Envoyer</button>
+  <p id="confirmation"></p>
+</section>
+
+<footer>
+  © 2026 NoMercy Secure
+</footer>
+
+<!-- FENÊTRE DE CONNEXION -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Connexion</h2>
+    <input type="text" id="username" placeholder="Nom d'utilisateur">
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button id="loginBtn">Se connecter</button>
+    <p id="loginMessage"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
